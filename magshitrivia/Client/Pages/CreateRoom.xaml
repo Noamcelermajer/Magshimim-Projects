@@ -1,0 +1,38 @@
+﻿<Window x:Class="Client.CreateRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="CreateRoom" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="background.png"
+                AlignmentY="Center" AlignmentX="Center"/>
+        </Grid.Background>
+        <Rectangle Fill="#434b4c" Height="301" Margin="0,0,10,19" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="772"/>
+
+        <TextBlock Height="32" Margin="0,0,449,167" x:Name="NumberOfQuestion" VerticalAlignment="Bottom" Foreground="White" FontSize="22" FontFamily="Unispace" HorizontalAlignment="Right" Width="251"><Run Text="Number of Q"/><Run Text="uestions :"/></TextBlock>
+        <TextBlock Height="32" Margin="0,0,377,217" x:Name="NumberOfPlayer" VerticalAlignment="Bottom" Width="323" Foreground="White" FontSize="22" FontFamily="Unispace" HorizontalAlignment="Right" ><Run FlowDirection="RightToLeft" Text="N"/><Run Text="umber of "/><Run FlowDirection="RightToLeft" Text="P"/><Run Text="layers   :"/></TextBlock>
+        <TextBlock Height="32" Margin="0,0,382,115" Name="TimeForQuestion" Text="Time For Question   :"  VerticalAlignment="Bottom" Width="318" Foreground="White" FontSize="22" FontFamily="Unispace" HorizontalAlignment="Right"/>
+        <TextBlock Height="32"  Margin="0,0,382,267" x:Name="RoomName" VerticalAlignment="Bottom" Width="318" Foreground="White" FontSize="22" FontFamily="Unispace" HorizontalAlignment="Right"><Run FlowDirection="RightToLeft" Text="R"/><Run Text="oom "/><Run FlowDirection="RightToLeft" Text="N"/><Run Text="ame           :"/></TextBlock>
+
+        <TextBox local:CornerRadiusSetter.CornerRadius="12" Height="32"  Margin="0,0,42,167" Name="NumberOfQuestionText" VerticalAlignment="Bottom" Width="222" TextChanged="TextBoxText_TextChanged" FontSize="18" HorizontalAlignment="Right" />
+        <TextBox local:CornerRadiusSetter.CornerRadius="12" Height="32"  Margin="0,0,42,115" Name="TimeForQuestionText" VerticalAlignment="Bottom" Width="222" TextChanged="TextBoxTime_TextChanged"  FontSize="18" HorizontalAlignment="Right"/>
+        <TextBox  local:CornerRadiusSetter.CornerRadius="12" Height="32"  Margin="0,0,42,267" Name="RoomNameText" VerticalAlignment="Bottom" Width="222" TextChanged="TextBoxRoom_TextChanged"  FontSize="18" HorizontalAlignment="Right" />
+
+        <TextBox local:CornerRadiusSetter.CornerRadius="12" Height="32" HorizontalAlignment="Right" Margin="0,0,42,217" Name="NumberOfPlayerText" VerticalAlignment="Bottom" Width="222" FontSize="18" TextChanged="TextBoxPlayer_TextChanged" />
+        <Button local:CornerRadiusSetter.CornerRadius="12" Content="Send" HorizontalAlignment="Right" Margin="0,0,42,45" Name="Send" Width="110" Click="Send_click" Foreground="White" BorderBrush="Black"  Background="Transparent" BorderThickness="2" Height="40" VerticalAlignment="Bottom"/>
+        <Button local:CornerRadiusSetter.CornerRadius="12" Content="Reset" Height="40" HorizontalAlignment="Right" Margin="0,0,338,45" Name="reset" VerticalAlignment="Bottom" Width="111" Click="reset_click" Foreground="White" BorderBrush="Black"  Background="Transparent" BorderThickness="2" />
+        <Button local:CornerRadiusSetter.CornerRadius="12" Content="Back" Height="40" HorizontalAlignment="Right" Margin="0,0,598,45" Name="back" VerticalAlignment="Bottom" Width="110" Click="back_click" Foreground="White" BorderBrush="Black"  Background="Transparent" BorderThickness="2"/>
+
+
+
+    </Grid>
+
+</Window>

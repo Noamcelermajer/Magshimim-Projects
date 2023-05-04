@@ -1,0 +1,19 @@
+﻿<Window x:Class="Client.GameScore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="GameScore" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.png"
+                AlignmentY="Center" AlignmentX="Center" Stretch="Fill"/>
+        </Grid.Background>
+        <Rectangle></Rectangle>
+        <Label Content="Label" Name="Score" Height="271" Margin="10,0,10,64" VerticalAlignment="Bottom" FontFamily="Levenim MT" FontSize="18" Background="White" Foreground="Black"/>
+        <Button local:CornerRadiusSetter.CornerRadius="12" Content="Exit Game" Margin="336,360,336,10" VerticalAlignment="Center" Name ="ExitGame" Height="49" BorderThickness="0" Background="White" Foreground="Black" FontSize="18" FontFamily="MV Boli" Click="ExitGame_Click" BorderBrush="White"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Client.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="LightSlateGray" FontFamily="Segoe UI Black" FontSize="14">
+    <Grid VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="450" Width="792" Margin="0,-28,0,-3">
+        <Label x:Name="Welcome" Content="Welcome to MagshiTrivia By &#xA;Ido Regev &amp; Noam Celermajer" Margin="0,0,185,333" VerticalAlignment="Bottom" Height="72" FontSize="24" FontFamily="Unispace" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Right" Width="415"/>
+        <Rectangle Fill="#FF160B21" Height="200" Margin="129,0,112,119" Stroke="#FFEAF1E0" VerticalAlignment="Bottom"/>
+        <Button local:CornerRadiusSetter.CornerRadius="7" Content="Login" HorizontalAlignment="Right" Margin="0,0,127,135" VerticalAlignment="Bottom" Width="95" Height="44" Background="LightSlateGray" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,494,250" TextWrapping="Wrap" Text="User name :" VerticalAlignment="Bottom" Foreground="#FFFFF9E2" FontSize="16" FontFamily="Segoe UI Historic" Width="88"/>
+        <TextBox local:CornerRadiusSetter.CornerRadius="7" Name="username" HorizontalAlignment="Right" Height="28" Margin="0,0,250,244" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="202" TextChanged="TextBox_TextChanged" Background="LightSlateGray" BorderBrush="#FF1A1A1A" FontStyle="Italic" FontFamily="Yu Gothic Medium" FontWeight="Bold"/>
+        <TextBox local:CornerRadiusSetter.CornerRadius="7" Name="password" HorizontalAlignment="Right" Height="28" Margin="0,0,250,193" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="202"  TextChanged="TextBox_TextChanged_1" Background="LightSlateGray" BorderBrush="#FF1A1A1A" FontFamily="Yu Gothic Medium" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,494,193" TextWrapping="Wrap" VerticalAlignment="Bottom" RenderTransformOrigin="0.171,0.7" Width="88" Foreground="#FFEAF1E0" FontFamily="Segoe UI Emoji" Height="27"><Run FontSize="16" FontFamily="Segoe UI Historic" Text="Password  "/><Run Text=" :"/></TextBlock>
+        <Button local:CornerRadiusSetter.CornerRadius="7" Content="Signup" HorizontalAlignment="Right" Margin="0,0,574,135" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="0.374,0.193" Height="44" BorderBrush="#FF2287CD" Background="LightSlateGray" Click="Button_Click_1"/>
+    </Grid>
+</Window>
